@@ -11,7 +11,7 @@ import SwiftUI
 struct MeowFactsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MeowFactsScreen()
         }
     }
 }
