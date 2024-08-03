@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		9553437E2C58DFF50091D3E4 /* MeowFactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553437D2C58DFF50091D3E4 /* MeowFactsApp.swift */; };
-		955343802C58DFF50091D3E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553437F2C58DFF50091D3E4 /* ContentView.swift */; };
+		955343802C58DFF50091D3E4 /* MeowFactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553437F2C58DFF50091D3E4 /* MeowFactsScreen.swift */; };
 		955343822C58DFF80091D3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955343812C58DFF80091D3E4 /* Assets.xcassets */; };
 		955343852C58DFF80091D3E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955343842C58DFF80091D3E4 /* Preview Assets.xcassets */; };
+		9553438D2C591F3C0091D3E4 /* generateMeowFactsAPI.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9553438C2C591F3C0091D3E4 /* generateMeowFactsAPI.sh */; };
+		955343B12C5BBD7A0091D3E4 /* MeowFactsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 955343B02C5BBD7A0091D3E4 /* MeowFactsAPI */; };
+		955343B32C5BBDDB0091D3E4 /* MeowFacts.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 955343B22C5BBDDB0091D3E4 /* MeowFacts.yaml */; };
+		955343B52C5BBF1B0091D3E4 /* MeowFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955343B42C5BBF1B0091D3E4 /* MeowFactsViewModel.swift */; };
+		955343B72C5CBB4B0091D3E4 /* MeowFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955343B62C5CBB4B0091D3E4 /* MeowFactsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9553437A2C58DFF50091D3E4 /* MeowFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeowFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9553437A2C58DFF50091D3E4 /* MeowFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MeowFacts.app; path = "/Users/anna/Documents/GitHub/MeowFacts/MeowFacts/build/Debug-iphoneos/MeowFacts.app"; sourceTree = "<absolute>"; };
 		9553437D2C58DFF50091D3E4 /* MeowFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsApp.swift; sourceTree = "<group>"; };
-		9553437F2C58DFF50091D3E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9553437F2C58DFF50091D3E4 /* MeowFactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsScreen.swift; sourceTree = "<group>"; };
 		955343812C58DFF80091D3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		955343842C58DFF80091D3E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9553438C2C591F3C0091D3E4 /* generateMeowFactsAPI.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateMeowFactsAPI.sh; sourceTree = "<group>"; };
+		955343AE2C5BBD6E0091D3E4 /* MeowFactsAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MeowFactsAPI; sourceTree = "<group>"; };
+		955343B22C5BBDDB0091D3E4 /* MeowFacts.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = MeowFacts.yaml; sourceTree = "<group>"; };
+		955343B42C5BBF1B0091D3E4 /* MeowFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsViewModel.swift; sourceTree = "<group>"; };
+		955343B62C5CBB4B0091D3E4 /* MeowFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowFactsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955343B12C5BBD7A0091D3E4 /* MeowFactsAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,23 +47,18 @@
 			isa = PBXGroup;
 			children = (
 				9553437C2C58DFF50091D3E4 /* MeowFacts */,
-				9553437B2C58DFF50091D3E4 /* Products */,
+				955343AF2C5BBD7A0091D3E4 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		9553437B2C58DFF50091D3E4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9553437A2C58DFF50091D3E4 /* MeowFacts.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9553437C2C58DFF50091D3E4 /* MeowFacts */ = {
 			isa = PBXGroup;
 			children = (
+				955343BA2C5E2FD70091D3E4 /* Common */,
+				955343B92C5E2D760091D3E4 /* ViewModel */,
+				955343B82C5E2D620091D3E4 /* Views */,
+				9553439C2C5A11ED0091D3E4 /* Modules */,
 				9553437D2C58DFF50091D3E4 /* MeowFactsApp.swift */,
-				9553437F2C58DFF50091D3E4 /* ContentView.swift */,
 				955343812C58DFF80091D3E4 /* Assets.xcassets */,
 				955343832C58DFF80091D3E4 /* Preview Content */,
 			);
@@ -65,6 +71,55 @@
 				955343842C58DFF80091D3E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9553439C2C5A11ED0091D3E4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				955343AE2C5BBD6E0091D3E4 /* MeowFactsAPI */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		955343AF2C5BBD7A0091D3E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		955343B82C5E2D620091D3E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9553437F2C58DFF50091D3E4 /* MeowFactsScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		955343B92C5E2D760091D3E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				955343B42C5BBF1B0091D3E4 /* MeowFactsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		955343BA2C5E2FD70091D3E4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				955343BB2C5E571C0091D3E4 /* Documents */,
+				955343B62C5CBB4B0091D3E4 /* MeowFactsService.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		955343BB2C5E571C0091D3E4 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				955343B22C5BBDDB0091D3E4 /* MeowFacts.yaml */,
+				9553438C2C591F3C0091D3E4 /* generateMeowFactsAPI.sh */,
+			);
+			path = Documents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +138,9 @@
 			dependencies = (
 			);
 			name = MeowFacts;
+			packageProductDependencies = (
+				955343B02C5BBD7A0091D3E4 /* MeowFactsAPI */,
+			);
 			productName = MeowFacts;
 			productReference = 9553437A2C58DFF50091D3E4 /* MeowFacts.app */;
 			productType = "com.apple.product-type.application";
@@ -111,7 +169,9 @@
 				Base,
 			);
 			mainGroup = 955343712C58DFF50091D3E4;
-			productRefGroup = 9553437B2C58DFF50091D3E4 /* Products */;
+			packageReferences = (
+			);
+			productRefGroup = 955343712C58DFF50091D3E4;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -125,8 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9553438D2C591F3C0091D3E4 /* generateMeowFactsAPI.sh in Resources */,
 				955343852C58DFF80091D3E4 /* Preview Assets.xcassets in Resources */,
 				955343822C58DFF80091D3E4 /* Assets.xcassets in Resources */,
+				955343B32C5BBDDB0091D3E4 /* MeowFacts.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955343802C58DFF50091D3E4 /* ContentView.swift in Sources */,
+				955343B52C5BBF1B0091D3E4 /* MeowFactsViewModel.swift in Sources */,
+				955343802C58DFF50091D3E4 /* MeowFactsScreen.swift in Sources */,
 				9553437E2C58DFF50091D3E4 /* MeowFactsApp.swift in Sources */,
+				955343B72C5CBB4B0091D3E4 /* MeowFactsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +401,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		955343B02C5BBD7A0091D3E4 /* MeowFactsAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MeowFactsAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 955343722C58DFF50091D3E4 /* Project object */;
 }
